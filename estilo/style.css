@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&family=Sriracha&display=swap');
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em; /*tamanho do nome do autor*/
+
+}
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw; /* 10% da largura da tela*/
+    
+}
+
+header > p {
+    padding-bottom: 50px; /* vai ficar simetrico junto com padding top */
+} 
+
+header a, footer a {
+    color: white;
+    text-decoration: none; /* tirar o sublinhado*/
+    font-weight: bolder; /*negrito*/
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline; /* ao passar o mouse em cima fica sublinhado*/
+}
+
+section { /*configuração geral section*/
+    padding-top: 10vh; /*10% da altura da tela*/
+    padding-bottom: 10vh;
+    line-height: 2em; /*espaçamento duplo entre as frases*/
+    padding-left: 30px; /*espaçamento um pouco par dentro*/
+    font-family: var(--fonte3);
+    font-size: 2vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+section.imagem > p {
+    display: inline-block; /* vai  se adaptar ao tamanho do conteudo*/
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
