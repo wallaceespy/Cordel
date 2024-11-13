@@ -49,6 +49,10 @@ header a:hover, footer a:hover {
     text-decoration: underline; /* ao passar o mouse em cima fica sublinhado*/
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section { /*configuração geral section*/
     padding-top: 10vh; /*10% da altura da tela*/
     padding-bottom: 10vh;
@@ -66,12 +70,29 @@ section.normal {
 section.imagem {
     background-color: rgb(44, 44, 44);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black; /* sombra para dentro*/
+    background-attachment: fixed; /* efeito paralax*/
+
 }
 
 section.imagem > p {
     display: inline-block; /* vai  se adaptar ao tamanho do conteudo*/
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.158);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.219);
+    
+}
+
+section#img01 {
+    background-image: url('../imagens/joaninha2.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/livro\ 3.jpg');
+    background-image: center center;
+    background-size: cover;
 }
 
 footer {
